@@ -142,9 +142,12 @@ namespace G24_interface
                     default:
                         break;
                 }
-
             }
-            val = ExecuteMemory(tmp[count - 1], memory, tmp[count]);
+            if(tmp.Count > 1)
+            {
+                val = ExecuteMemory(tmp[count - 1], memory, tmp[count]);
+            }
+            
             return val;
         }
     }
