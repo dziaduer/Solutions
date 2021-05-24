@@ -8,6 +8,7 @@ namespace G24_interface
 {
     static class Calculations
     {
+        //Wykonywanie obliczen
         private static int ExecuteMemory(int a, int memory, int b)
         {
             int val;
@@ -23,6 +24,7 @@ namespace G24_interface
                     val = a * b;
                     break;
                 case 3:
+                    //Chce, aby dzielenie zawsze zaokraglalo w gore
                     int c;
                     val = a / b;
                     if (Math.DivRem(a, b, out c) > 0)
@@ -40,6 +42,7 @@ namespace G24_interface
             return val;
         }
 
+        //Wykonywane, gdy uzytkownik klika enter
         public static int EnterValue(string str)
         {
             int val = 0;
